@@ -102,7 +102,7 @@ ol > li > a:hover {
 }
 
 #alt {
-  width: 45vw;
+  width: 50vw;
   border: 1px solid aquamarine;
   border-radius: 15px;
 }
@@ -115,25 +115,47 @@ ol > li > a:hover {
 
 .photos {
   display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
   justify-items: center;
-  margin: 5% 0;
-
 }
 
-.gallery {
-  width: 400px;
+.gallery:not(#d3) {
+  width: 300px;
   border-radius: 5%;
   border: 1px solid aquamarine;
+  margin: 10px;
 }
 
 #d3 {
-  margin: 5% 0;
-  grid-row-start:1 / span 2 ;
-
+  border-radius: 5%;
+  border: 1px solid aquamarine;
+  width: 400px;
+  margin: 10px;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
-#d2 {
-  grid-row-start: 2 / span 2;
+#d1 {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: ;
+}
+
+/*! Footer */
+footer {
+  width: 100vw;
+}
+.socials > a > img {
+  width: 30px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
